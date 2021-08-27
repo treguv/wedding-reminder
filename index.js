@@ -66,9 +66,9 @@ const getVerse = async function (){
     .then(response => {
         const contentType = response.headers.get("content-type");
         if (contentType && contentType.indexOf("application/json") !== -1) {
-            console.log("please");
+            console.log("NOT BROKEN");
         } else {
-            console.log("bad");
+            console.log("BROKEN");
         }
     })
     .then(data => {
